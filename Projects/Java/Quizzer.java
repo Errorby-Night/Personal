@@ -40,7 +40,7 @@ class Quizzer{
         while(sc.hasNext()){
             c++;
         }
-            sc.close();
+            sc.close(); 
         return c;
     }*/
     public static ArrayList<String> storeq()throws FileNotFoundException{
