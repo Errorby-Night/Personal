@@ -11,14 +11,14 @@ for current in range(4):  #the number in range is to denote the number to charac
         a=[y+i for i in charlist for y in a]
     complete= complete + a
 
-z=zipfile.ZipFile('Exercise_2.zip')
+z=zipfile.ZipFile('<path name>')
 t=0
 
 for password in complete:
     try:
         t+=1
         z.setpassword(password.encode('ascii'))
-        z.extract('test.txt')
+        z.extract('<output file name>.txt')
         print(f'password was found after {t} tries! The password is {password}')
     except:
         pass
