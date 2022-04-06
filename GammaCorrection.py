@@ -15,7 +15,7 @@ def isbright(image, dim, thresh):
     L = L/np.max(L)
     return (np.mean(L)> thresh)
 
-vid = cv2.VideoCapture("light_test_data/im (%d).jpg") #file path
+vid = cv2.VideoCapture("datasets/lighttraindata/light_test_data/im (%d).jpg") #file path
 output = cv2.VideoWriter("result2.mp4", cv2.VideoWriter_fourcc(*'MP4V'), 24.0, (720, 480))
 if (vid.isOpened() == False):
     print("ERROR")
