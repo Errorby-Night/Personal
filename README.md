@@ -1,1 +1,1 @@
-## Trying to fuel my GOD complex
+## All the training and test data are available inside the project folder
